@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NeoTech Store</title>
+</head>
+<body>
+  <h1>Welcome to NeoTech Store</h1>
+  <% if (user) { %>
+    <p>Hello, <%= user.email %>!</p>
+  <% } else { %>
+    <a href="/login">Login</a>
+  <% } %>
+</body>
+</html>
